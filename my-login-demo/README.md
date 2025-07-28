@@ -28,10 +28,10 @@ A **production‑ready** reference project that shows how to build a **pluggable
 *A Landing page.*
 
 ![Login Page Demo](./public/demo2.png)  
-*An authenticated dashboard showing user data.*
+*An Login prompt that communicates with a backend.*
 
 ![Dashboard Demo](./public/demo3.png)  
-*An authenticated dashboard.*
+*An authenticated dashboard after authentication.*
 
 ---
 
