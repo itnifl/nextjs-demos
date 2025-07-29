@@ -17,9 +17,6 @@ A **production‑ready** reference project that shows how to build a **pluggable
 - **Service Locator** (`AuthRegistry`) – run‑time DI with zero 3rd‑party libs.  
 - **Cookie demo provider** – secure `HttpOnly` cookie sessions out of the box.  
 - **User data abstraction** – switch from JSON to DB without touching auth logic.  
-- **Type‑safe** – written in TypeScript, no `any` (ts‑strict mode).  
-- **Quality gates** – ESLint, Prettier, Husky, and Vitest ready to go.  
-- **1‑click  Vercel deploy** button.
 
 ---
 ## 📸 Screenshots
@@ -156,7 +153,6 @@ _To add any of these:_
 
 - 🚀 **Zero‑touch swapping** of auth back‑ends  
 - 🧩 **UI agnostic**: no Azure/MSAL/Firebase imports in your React components  
-- 🧪 **Easier testing**: register a “mock” provider in Vitest  
 - 🔍 **Single registry**: central place to inspect and control all providers  
 
 With this pattern, you can start with a simple cookie demo and seamlessly graduate to any enterprise‑grade identity solution—without rewriting your pages, hooks, or guards.
@@ -278,8 +274,8 @@ npm run typecheck
 npm run lint
 npm run format
 
-# Unit tests (Vitest)
-npm test
+# Unit tests
+npm run test
 ```
 
 Pre‑commit hooks block pushes that break lint, types, or tests.
@@ -301,7 +297,6 @@ Pre‑commit hooks block pushes that break lint, types, or tests.
 - [Next.js App Router](https://nextjs.org/docs/app)
 - [Using HttpOnly Cookies for Auth](https://owasp.org/www-community/HttpOnly)
 - [bcryptjs](https://www.npmjs.com/package/bcryptjs)
-- [Vitest](https://vitest.dev)
 - [ESLint no‑magic‑numbers](https://eslint.org/docs/latest/rules/no-magic-numbers)
 
 ---
