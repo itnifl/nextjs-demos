@@ -9,11 +9,20 @@ on:
 jobs:
   test-and-build:
     runs-on: ubuntu-latest
+
+    # apply to *all* 'run:' steps in this job
+    defaults:
+      run:
+        working-directory: my-login-demo
+
     steps:
       - uses: actions/checkout@v3
+
       - uses: actions/setup-node@v3
         with:
           node-version: '18'
-      - run: npm install
+
+      # now these run *inside* my-login-demo/
+      - run: npm ci
       - run: npm run test
       - run: npm run build
