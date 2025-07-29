@@ -51,7 +51,7 @@ export class JsonUserDataProvider implements UserDataProvider {
     const logger = LoggerRegistry.resolve();
     logger.info('[JsonUserDataProvider] - Finding user: ' + email);
     try {
-      let user = this.users.find(u => u.email === email) ?? null;
+      const user = this.users.find(u => u.email === email) ?? null;
       logger.info('[JsonUserDataProvider] - Found user: ' + user?.email);
       return user;
     } catch(error) {
