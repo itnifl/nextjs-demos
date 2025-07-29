@@ -10,20 +10,20 @@ export interface ILogger {
    * @param message   Main log message.
    * @param meta      Optional additional metadata.
    */
-  debug(message: string, meta?: Record<string, any>): void;
+  debug(message: string, meta?: Record<string, unknown>): void;
 
   /**
    * Informational messages, important system events.
    */
-  info(message: string, meta?: Record<string, any>): void;
+  info(message: string, meta?: Record<string, unknown>): void;
 
   /**
    * Warnings for potential issues.
    */
-  warn(message: string, meta?: Record<string, any>): void;
+  warn(message: string, meta?: Record<string, unknown>): void;
 
   /**
    * Error‐level logging. Accepts either a string or an Error object.
    */
-  error(message: string | Error, meta?: Record<string, any>): void;
+  error(message: string | Error, meta?: Record<string, unknown>): void;
 }
