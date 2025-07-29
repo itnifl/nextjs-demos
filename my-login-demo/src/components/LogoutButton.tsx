@@ -16,7 +16,7 @@ export function LogoutButton() {
     (async () => {
       const auth = AuthRegistry.resolveClient();
       const isLoggedIn = await auth.isAuthenticatedClient();
-      const publicRoutes = [ROUTES.HOME as string, ROUTES.LOGIN as string];
+      const publicRoutes = [ROUTES.LOGIN as string];
       setVisible(isLoggedIn && !publicRoutes.includes(pathname));
     })();
   }, [pathname]);
