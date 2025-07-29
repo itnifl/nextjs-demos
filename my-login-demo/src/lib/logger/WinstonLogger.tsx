@@ -21,16 +21,19 @@ const winstonLogger = winston.createLogger({
 });
 
 export class WinstonLogger implements ILogger {
-  debug(message: string, meta: Record<string, any> = {}) {
+  debug(message: string, meta: Record<string, unknown> = {}) {
     winstonLogger.debug(message, meta);
   }
-  info(message: string, meta: Record<string, any> = {}) {
+
+  info(message: string, meta: Record<string, unknown> = {}) {
     winstonLogger.info(message, meta);
   }
-  warn(message: string, meta: Record<string, any> = {}) {
+
+  warn(message: string, meta: Record<string, unknown> = {}) {
     winstonLogger.warn(message, meta);
   }
-  error(message: string | Error, meta: Record<string, any> = {}) {
+
+  error(message: string | Error, meta: Record<string, unknown> = {}) {
     if (message instanceof Error) {
       winstonLogger.error(message.message, { stack: message.stack, ...meta });
     } else {
