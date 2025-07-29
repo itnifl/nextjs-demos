@@ -8,9 +8,8 @@ import styles from './CookieConsent.module.css';
 const COOKIE_NAME = 'site_cookie_consent';
 const COOKIE_OPTIONS = {
   expires: 365,
-  // Cast sameSite as literal to satisfy TS
-  sameSite: 'strict' as 'strict',
-};
+  sameSite: 'strict',
+} as const;
 
 export default function CookieConsent() {
   const [visible, setVisible] = useState(false);
