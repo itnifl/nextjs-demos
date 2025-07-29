@@ -3,6 +3,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import Link from 'next/link'; 
 import { LogoutButton } from '@/components/LogoutButton'; 
+import CookieConsent from '@/components/CookieConsent';
 
 export const metadata: Metadata = {
   title: 'The Login Demo',
@@ -37,6 +38,7 @@ export default async function RootLayout({
 
           {/* Main page content goes here */}
           <main>{children}</main>
+          <CookieConsent />
         </div>
       </body>
     </html>
