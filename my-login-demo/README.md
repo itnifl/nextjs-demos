@@ -2,7 +2,7 @@
 
 [![Next.js](https://img.shields.io/badge/Next.js-14+-000?logo=nextdotjs&logoColor=white)](https://nextjs.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![CI](https://github.com/your-org/your-repo/actions/workflows/ci.yml/badge.svg)](https://github.com/your-org/your-repo/actions/workflows/ci.yml)
+[![CI](https://github.com/itnifl/nextjs-demos/actions/workflows/my-login-demo-ci.yml/badge.svg)](https://github.com/your-org/itnifl/nextjs-demos/workflows/my-login-demo-ci.yml)
 
 A **production‑ready** reference project that shows how to build a **pluggable authentication layer** in the Next.js _App Router_ using cookies, dependency‑injection, and provider interfaces.
 
